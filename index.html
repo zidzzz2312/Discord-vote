@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Vote</title>
+</head>
+<body>
+  <h1>Discord Vote</h1>
+  <p>Website voting Discord sedang dipersiapkan.</p>
+
+  <input
+    type="text"
+    id="username"
+    placeholder="Masukkan username Discord"
+  >
+
+  <button id="voteButton">VOTE</button>
+
+  <script>
+    document.getElementById("voteButton").addEventListener("click", () => {
+      const username = document.getElementById("username").value.trim();
+
+      if (!username) {
+        alert("Masukkan username Discord terlebih dahulu.");
+        return;
+      }
+
+      alert("Username diterima: " + username);
+    });
+  </script>
+</body>
+  </html>
